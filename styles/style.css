@@ -1,8 +1,7 @@
 /*/*//*/*
+ Mobile Styles */
 
-/* Mobile Styles */
-
-@media only screen and (min-width: 360px) and (max-width: 600px){
+@media only screen and (min-width: 390px) and (max-width: 600px){
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -367,10 +366,735 @@ text-align:end;
  
 }
 
+@media only screen and (min-width: 375px) {
+ 
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+/*box-sizing: border-box;*/
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  /*background-image: linear-gradient(to top, #a73b9b 0%, #f880cc99 100%);*/
+  font-weight: lighter;
+  color:rgb(155, 206, 193);
+  text-shadow:6px 3px 15px; /*neon..glow*/
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color:rgb(155, 206, 193);
+  text-shadow:6px 3px 15px; /*neon..glow*/
+  font-weight:bold;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+    color: rgba(158, 251, 209, 0.634);
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 0px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  /*background: #6eb1ba;*/
+  background:rgba(255, 0, 0, 0.429);
+  text-shadow:6px 3px 15px; /*neon..glow*/
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 30px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  height: 65vh; /*LÄNGE/HÖHE DES DROPDOWN*/
+  width: 110%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 25px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 0.1rem;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.2rem;
+ /* color: #ff53898c;*/
+ color:rgba(255, 0, 0, 0.354);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+
+/*Tapes*/
+#img {
+    object-fit:cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+  
+}
+
+ /*LOREM IPSUM*/
+ #section1  li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fcb6ed;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+/*FOTO ABOUT*/
+.bio{
+width: 60%;
+display: flex;
+flex-direction: column;
+margin-left: 80px;
+border-radius: 5px 5px 5px;
+}
+
+#section1  li{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+/* CLIENT/BOOKED AKKORDION*/
+.accordion-item-toggle {
+  display: none;
+}
+
+.accordion-item-header {
+  padding: 0px;
+  cursor:pointer;
+}
+
+.accordion-item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-top: 20px;
+  
+}
+
+.accordion-item-toggle:checked ~ .accordion-item-content {
+  max-height: 800px; /* Set an appropriate height */
+}
+
+ /* CLIENT/BOOKED AKKORDION*/
+ .accordion-item-toggle {
+  display: none;
+}
+
+.accordion-item-header {
+  padding-left: 15px;
+  cursor:pointer;
+  
+}
+
+.accordion-item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-top: 0px;
+  
+}
+
+.accordion-item-toggle:checked ~ .accordion-item-content {
+  max-height: 900px; /* Set an appropriate height */
+}
+
+
+
+/*Liste Clients,Booked Artist*/
+li{
+  font-size: 20px;
+  color: rgb(228, 156, 193);
+  margin: 20px; /*TEXTBREITE*/
+}
+
+h3{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+
+#section1 li {
+  padding:0px;
+  font-size: 12px;
+
+}
+
+li {
+  margin: 10px;
+}
+
+ /*PUBLICATION*/
+ #section3 ul, a{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color:rgb(236, 166, 215);
+  font-size: 15px;
+  font-weight: 100;
+  text-decoration: none;
+
+ }
+
+  /*MIXCLOUD*/
+  #section4 a{
+    display: flex;
+    color:#fca7e2;
+    padding-left: 8px;
+    font-size: 15px;
+    text-shadow:none;
+  
+  }
+
+  /*CONTACT*/
+
+/*SOCIAL MEDIA BUTTONS*/
+
+#social a {
+  display: inline-block;
+  margin-right: 5px; /* Abstand zwischen den Elementen anpassen */
+}
+
+#social img {
+  width: 30px; /* Breite der Bilder anpassen */
+  height: 30px; /* Höhe der Bilder anpassen */
+}
+#social img.mix {
+  height: 10px;
+  
+}
+
+#social img{
+  width: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  
+  }
+   #social .mix{
+    width: 80px;
+    padding-bottom: 22px;
+    
+   }
+  
+   
+#section5 ul >li{
+  display: flex;
+  flex-direction:row;
+  justify-content:baseline;
+  text-align:center;
+  font-size: 15px;
+}
+
+
+footer  p{
+color:#f8b3cc;
+font-size: 15px; 
+display: flex;
+justify-content:center;
+padding-top: 10px;
+/*color:rgb(254, 162, 208);*/
+padding-left: 5px;
+
+
+}
+
+h7{
+font-size: 15px;
+color:hsl(338, 93%, 89%); 
+}
+/*IMPRESSUM*/
+.accordion-item-1{
+display: flex;
+flex-direction: column;
+text-align:end;
+
+
+}
+}
+/*RESPONSIV 343px*/
+@media only screen and (min-width: 343px) {
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+/*box-sizing: border-box;*/
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  /*background-image: linear-gradient(to top, #a73b9b 0%, #f880cc99 100%);*/
+  font-weight: lighter;
+  color:rgb(155, 206, 193);
+  text-shadow:6px 3px 15px; /*neon..glow*/
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color:rgb(155, 206, 193);
+  text-shadow:6px 3px 15px; /*neon..glow*/
+  font-weight:bold;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+    color: rgba(158, 251, 209, 0.634);
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 0px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  /*background: #6eb1ba;*/
+  background:rgba(255, 0, 0, 0.429);
+  text-shadow:6px 3px 15px; /*neon..glow*/
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 30px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  height: 65vh; /*LÄNGE/HÖHE DES DROPDOWN*/
+  width: 110%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 25px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 0.1rem;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.2rem;
+ /* color: #ff53898c;*/
+ color:rgba(255, 0, 0, 0.354);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+
+/*Tapes*/
+#img {
+    object-fit:cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+  
+}
+
+ /*LOREM IPSUM*/
+ #section1  li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fcb6ed;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+/*FOTO ABOUT*/
+.bio{
+width: 60%;
+display: flex;
+flex-direction: column;
+margin-left: 80px;
+border-radius: 5px 5px 5px;
+}
+
+#section1  li{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+/* CLIENT/BOOKED AKKORDION*/
+.accordion-item-toggle {
+  display: none;
+}
+
+.accordion-item-header {
+  padding: 0px;
+  cursor:pointer;
+}
+
+.accordion-item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-top: 20px;
+  
+}
+
+.accordion-item-toggle:checked ~ .accordion-item-content {
+  max-height: 800px; /* Set an appropriate height */
+}
+
+ /* CLIENT/BOOKED AKKORDION*/
+ .accordion-item-toggle {
+  display: none;
+}
+
+.accordion-item-header {
+  padding-left: 15px;
+  cursor:pointer;
+  
+}
+
+.accordion-item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-top: 0px;
+  
+}
+
+.accordion-item-toggle:checked ~ .accordion-item-content {
+  max-height: 900px; /* Set an appropriate height */
+}
+
+
+
+/*Liste Clients,Booked Artist*/
+li{
+  font-size: 20px;
+  color: rgb(228, 156, 193);
+  margin: 20px; /*TEXTBREITE*/
+}
+
+h3{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+
+#section1 li {
+  padding:0px;
+  font-size: 12px;
+
+}
+
+li {
+  margin: 10px;
+}
+
+ /*PUBLICATION*/
+ #section3 ul, a{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color:rgb(236, 166, 215);
+  font-size: 15px;
+  font-weight: 100;
+  text-decoration: none;
+
+ }
+
+  /*MIXCLOUD*/
+  #section4 a{
+    display: flex;
+    color:#fca7e2;
+    padding-left: 8px;
+    font-size: 15px;
+    text-shadow:none;
+  
+  }
+
+  /*CONTACT*/
+
+/*SOCIAL MEDIA BUTTONS*/
+
+#social a {
+  display: inline-block;
+  margin-right: 5px; /* Abstand zwischen den Elementen anpassen */
+}
+
+#social img {
+  width: 30px; /* Breite der Bilder anpassen */
+  height: 30px; /* Höhe der Bilder anpassen */
+}
+#social img.mix {
+  height: 10px;
+  
+}
+
+#social img{
+  width: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  
+  }
+   #social .mix{
+    width: 80px;
+    padding-bottom: 22px;
+    
+   }
+  
+   
+#section5 ul >li{
+  display: flex;
+  flex-direction:row;
+  justify-content:baseline;
+  text-align:center;
+  font-size: 15px;
+}
+
+
+footer  p{
+color:#f8b3cc;
+font-size: 15px; 
+display: flex;
+justify-content:center;
+padding-top: 10px;
+/*color:rgb(254, 162, 208);*/
+padding-left: 5px;
+
+
+}
+
+h7{
+font-size: 15px;
+color:hsl(338, 93%, 89%); 
+}
+/*IMPRESSUM*/
+.accordion-item-1{
+display: flex;
+flex-direction: column;
+text-align:end;
+
+
+}
+}
 
 /* DESKTOP VERSION*/
 
-@media only screen and (min-width:801px){
+@media only screen and (min-width:768px){
 
   @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
 
