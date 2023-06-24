@@ -100,7 +100,8 @@ body {
   width: 100%;
   border-radius: 10px;
   /*background: #6eb1ba;*/
-  background:rgba(255, 0, 0, 0.429)
+  background:rgba(255, 0, 0, 0.429);
+  text-shadow:6px 3px 15px; /*neon..glow*/
 }
 
 .nav-container .hamburger-lines .line1 {
