@@ -401,6 +401,8 @@ text-align:end;
 
   .nav-container .checkbox {
     display: none;
+    visibility: hidden;
+
   }
   
   /*NAVBAR*/
