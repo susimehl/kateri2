@@ -2,7 +2,7 @@
 
 /* Mobile Styles */
 
-@media only screen and (min-width: 390px) and (max-width: 600px){
+@media only screen and (min-width: 340px) and (max-width: 600px){
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -60,6 +60,7 @@ body {
 
 .navbar .nav-container a:hover{
     font-weight: bolder;
+    color: rgba(158, 251, 209, 0.634);
 }
 
 .nav-container {
@@ -85,7 +86,7 @@ body {
   height: 26px;
   width: 32px;
   position: absolute;
-  top: 17px;
+  top: 20px;
   left: 20px;
   z-index: 2;
   display: flex;
@@ -98,7 +99,8 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #6eb1ba;
+  /*background: #6eb1ba;*/
+  background:rgba(255, 0, 0, 0.429)
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -116,22 +118,21 @@ body {
 }
 
 .navbar .menu-items {
-  padding-top: 10px;
+  padding-top: 30px;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  height: 100vh;
-  width: 100%;
+  height: 65vh; /*LÄNGE/HÖHE DES DROPDOWN*/
+  width: 110%;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
   margin-left: -40px;
-  padding-left: 50px;
+  padding-left: 25px;
   transition: transform 0.5s ease-in-out;
   text-align: center;
 }
 
 .navbar .menu-items li {
-  margin-bottom: 1.2rem;
-  font-size: 1.5rem;
+  margin-bottom: 0.1rem;
   font-weight: 500;
 }
 
@@ -140,7 +141,8 @@ body {
   top: 15px;
   right: 15px;
   font-size: 1.2rem;
-  color: #ff53898c;
+ /* color: #ff53898c;*/
+ color:rgba(255, 0, 0, 0.354);
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -367,7 +369,7 @@ text-align:end;
 
 /* DESKTOP VERSION*/
 
-@media only screen and (min-width:801px){
+@media only screen and (min-width:820px){
 
   @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
 
@@ -386,12 +388,18 @@ text-align:end;
       font-weight: lighter;
       color:rgb(155, 206, 193);
       text-shadow:6px 3px 15px; /*neon..glow*/
-      margin:70px; 
-      padding: 30px;
+      margin: 30px; 
+      padding:  0px;
       font-size: 30px;
   }
   
-  
+  h1{
+    display: none;
+  }
+
+  .nav-container .checkbox {
+    display: none;
+  }
   
   /*NAVBAR*/
   ul {
@@ -469,6 +477,7 @@ text-align:end;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
+    
       
     
   }
@@ -485,7 +494,7 @@ text-align:end;
       align-items: center;
       justify-content: center;
       color:#fcb6ed;
-      font-size: 16px;
+      font-size: 13px;
       padding-left: 30px;
       padding-right: 30px;
       
