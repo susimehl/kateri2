@@ -474,7 +474,7 @@ li {
   flex-direction:row;
   justify-content:baseline;
   text-align:center;
-  font-size: 15px;
+  font-size: 5px;
 }
 
 
@@ -500,6 +500,7 @@ color:hsl(338, 93%, 89%);
 display: flex;
 flex-direction: column;
 text-align:end;
+
 
 
 }
@@ -1547,6 +1548,7 @@ text-align:end;
     color: rgb(228, 156, 193);
     margin: 7px; /*TEXTBREITE*/
    
+   
     
   }
   
@@ -1588,12 +1590,12 @@ text-align:end;
    
     footer  p{
       color:#f8b3cc;
-      font-size: 15px; 
+      font-size: 10px; 
       display: flex;
       justify-content:center;
       padding-top: 10px;
       /*color:rgb(254, 162, 208);*/
-      padding-left: 5px;
+      padding-left: 15px;
    
   
    }
