@@ -396,6 +396,7 @@ text-align:end;
   
   h1{
     display: none;
+    visibility: hidden;
   }
 
   .nav-container .checkbox {
