@@ -651,7 +651,7 @@ li {
    
 #section5 li{
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   justify-content:baseline;
   text-align:center;
   font-size: 10px;
@@ -974,7 +974,7 @@ li {
    
 #section5 ul >li{
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   justify-content:baseline;
   text-align:center;
   font-size: 15px;
@@ -1281,10 +1281,12 @@ text-align:end;
       }
       #section5 li{
         display: flex;
-        flex-direction:row;
+        flex-direction:column;
         justify-content:baseline;
         text-align:center;
         font-size: 15px;
+        color:#f8b3cc;
+
       }
    
    
@@ -1294,7 +1296,6 @@ text-align:end;
       display: flex;
       justify-content:center;
       padding-top: 10px;
-      /*color:rgb(254, 162, 208);*/
       padding-left: 15px;
    
   
