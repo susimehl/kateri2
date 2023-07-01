@@ -304,12 +304,12 @@ h1{
    }
   
    
-#section5 ul >li{
+#section5 li{
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   justify-content:baseline;
   text-align:center;
-  font-size: 5px;
+  font-size: 15px;
 }
 
 
