@@ -29,12 +29,7 @@ body {
   .nav-container {
     max-width: 1050px;
     width: 90%;
-    height: 0px;
- 
-  
-  
-   
-    
+    height: 0px; 
   }
   
   .navbar {
@@ -52,12 +47,9 @@ body {
   }
   
  
-  
   .navbar .nav-container li {
     list-style: none;
-  
-  
-  
+
   }
   
   .navbar .nav-container a {
@@ -66,16 +58,13 @@ body {
     text-shadow:6px 3px 15px; /*neon..glow*/
     font-weight:bold;
     font-size: 1.8rem;
-   
-   
-    
+     
   }
   
   .navbar .nav-container a:hover{
       font-weight: bolder;
       color: rgba(158, 251, 209, 0.634);
   }
-  
   
   
   .nav-container .checkbox {
@@ -107,9 +96,8 @@ body {
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    /*background: #6eb1ba;*/
     background:rgba(255, 0, 0, 0.429);
-    text-shadow:6px 3px 15px; /*neon..glow*/
+    text-shadow:6px 3px 15px; 
   }
   
   .nav-container .hamburger-lines .line1 {
@@ -225,30 +213,6 @@ border-radius: 5px 5px 5px;
   overflow: hidden;
   transition: max-height 0.3s ease;
   margin-top: 20px;
-  
-}
-
-.accordion-item-toggle:checked ~ .accordion-item-content {
-  max-height: 800px; /* Set an appropriate height */
-}
-
- /* CLIENT/BOOKED AKKORDION*/
- .accordion-item-toggle {
-  display: none;
-}
-
-.accordion-item-header {
-  padding-left: 15px;
-  cursor:pointer;
-  
-}
-
-.accordion-item-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  margin-top: 0px;
-  
 }
 
 .accordion-item-toggle:checked ~ .accordion-item-content {
@@ -258,7 +222,7 @@ border-radius: 5px 5px 5px;
 
 
 /*Lists Clients+Booked Artist*/
-#section2  ul > li{
+#section2  li{
   font-size: 16px;
   color: rgb(242, 169, 206);
   margin: 10px; /*TEXTBREITE*/
@@ -271,11 +235,12 @@ border-radius: 5px 5px 5px;
 /*HEADLINES*/
 h1{
   font-size: 15px;
+  padding:10px;
 }
 
 #section1 li {
   padding:0px;
-  font-size: 12px;
+  font-size: 15px;
   margin: 25px;
 
 }
@@ -289,6 +254,8 @@ h1{
   font-size: 15px;
   font-weight: 300;
   text-decoration: none;
+  text-shadow:6px 3px 15px; 
+
   
  
 
@@ -352,7 +319,6 @@ font-size: 15px;
 display: flex;
 justify-content:center;
 padding-top: 10px;
-/*color:rgb(254, 162, 208);*/
 padding-left: 5px;
 
 
@@ -391,7 +357,6 @@ text-align:end;
 body {
   font-family: "Poppins", sans-serif;
   background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
-  /*background-image: linear-gradient(to top, #a73b9b 0%, #f880cc99 100%);*/
   font-weight: lighter;
   color:rgb(155, 206, 193);
   text-shadow:6px 3px 15px; /*neon..glow*/
@@ -409,10 +374,7 @@ body {
 .navbar {
   width: 100%;
   box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
- 
-  
-
-  
+   
 }
 
 .navbar .nav-container {
@@ -426,11 +388,8 @@ body {
 }
 
 
-
 .navbar .nav-container li {
   list-style: none;
-
- 
 
 }
 
@@ -483,9 +442,8 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  /*background: #6eb1ba;*/
   background:rgba(255, 0, 0, 0.429);
-  text-shadow:6px 3px 15px; /*neon..glow*/
+  text-shadow:6px 3px 15px; 
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -528,7 +486,6 @@ body {
   top: 15px;
   right: 15px;
   font-size: 1.2rem;
- /* color: #ff53898c;*/
  color:rgba(255, 0, 0, 0.354);
 }
 
@@ -606,29 +563,6 @@ border-radius: 5px 5px 5px;
 }
 
 .accordion-item-toggle:checked ~ .accordion-item-content {
-  max-height: 800px; /* Set an appropriate height */
-}
-
- /* CLIENT/BOOKED AKKORDION*/
- .accordion-item-toggle {
-  display: none;
-}
-
-.accordion-item-header {
-  padding-left: 15px;
-  cursor:pointer;
-  
-}
-
-.accordion-item-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  margin-top: 0px;
-  
-}
-
-.accordion-item-toggle:checked ~ .accordion-item-content {
   max-height: 900px; /* Set an appropriate height */
 }
 
@@ -636,19 +570,20 @@ border-radius: 5px 5px 5px;
 
 /*Lists Clients+Booked Artist*/
 #section2 ul > li{
-   font-size: 16px;
+   font-size: 14px;
     color: rgb(242, 169, 206);
     margin: 10px; /*TEXTBREITE*/
     display: flex;
     flex-direction: column;
     text-align: center;
-    text-shadow:6px 3px 15px; /*neon..glow*/
+    text-shadow:6px 3px 15px; 
   }
 }
 
 /*HEADLINES*/
 h1{
   font-size: 20px;
+  padding:10px;
 }
 
 li {
@@ -664,7 +599,7 @@ li {
   font-size: 15px;
   font-weight: 100;
   text-decoration: none;
-  padding-top: 10px;
+  padding: 0px;
 
 
  }
@@ -712,7 +647,7 @@ li {
    }
   
    
-#section5 ul > li{
+#section5 li{
   display: flex;
   flex-direction:row;
   justify-content:baseline;
@@ -728,7 +663,6 @@ font-size: 15px;
 display: flex;
 justify-content:center;
 padding-top: 10px;
-/*color:rgb(254, 162, 208);*/
 padding-left: 5px;
 
 
@@ -872,17 +806,16 @@ body {
 }
 
 .navbar .menu-items li {
-  margin-bottom: 0.1rem;
+ 
   font-weight: 500;
 }
 
-.logo {
+.logo h1{
   position: absolute;
   top: 15px;
   right: 15px;
   font-size: 1.2rem;
-
- color:rgba(255, 0, 0, 0.354);
+  color:rgba(255, 0, 0, 0.354);
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -956,28 +889,6 @@ border-radius: 5px 5px 5px;
   
 }
 
-.accordion-item-toggle:checked ~ .accordion-item-content {
-  max-height: 800px; /* Set an appropriate height */
-}
-
- /* CLIENT/BOOKED AKKORDION*/
- .accordion-item-toggle {
-  display: none;
-}
-
-.accordion-item-header {
-  padding-left: 15px;
-  cursor:pointer;
-  
-}
-
-.accordion-item-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  margin-top: 0px;
-  
-}
 
 .accordion-item-toggle:checked ~ .accordion-item-content {
   max-height: 900px; /* Set an appropriate height */
@@ -1005,7 +916,7 @@ li {
 }
 
  /*PUBLICATION*/
- #section3 ul, a{
+ #section3  a{
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -1073,7 +984,6 @@ font-size: 15px;
 display: flex;
 justify-content:center;
 padding-top: 10px;
-/*color:rgb(254, 162, 208);*/
 padding-left: 5px;
 
 
@@ -1130,9 +1040,6 @@ text-align:end;
   align-items: center;
   max-width: 1050px;
   width: 90%;
-  
-  
-
 
 }
 
@@ -1140,7 +1047,6 @@ text-align:end;
 
 .navbar .nav-container li {
   list-style: none;
-  
 
 }
 
@@ -1204,7 +1110,6 @@ text-align:end;
 
 
 .navbar .menu-items li {
-  margin: 0px;
   font-weight: 500;
   padding: 15px;
 
@@ -1215,8 +1120,8 @@ text-align:end;
   position: absolute;
   top: 15px;
   right: 15px;
-  font-size: 1.2rem;
- color:rgba(255, 0, 0, 0.354);
+  font-size: 1.5rem;
+  color:rgba(255, 0, 0, 0.354);
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -1270,7 +1175,6 @@ text-align:end;
     .menu-items a {
       text-align: right;
       text-decoration: none;
-      /*color: #4352f9;*/
       color:rgb(250, 216, 240);
       font-size: 20px;
       font-weight: bolder;
@@ -1330,7 +1234,7 @@ text-align:end;
     }
     
     .accordion-item-toggle:checked ~ .accordion-item-content {
-      max-height: 800px; /* Set an appropriate height */
+      max-height: 900px; /* Set an appropriate height */
     }
   
   
@@ -1346,12 +1250,12 @@ text-align:end;
   }
   
   /*PUBLICATION*/
-    #section3 ul, a{
+    #section3 a{
       display:flex;
       flex-direction: column;
       align-items: center;
       color:rgb(236, 166, 215);
-      font-size: 20px;
+      font-size: 15px;
       font-weight: 100;
      }
   
@@ -1372,7 +1276,7 @@ text-align:end;
         height: 10px;
         
       }
-      #section5 ul >li{
+      #section5 li{
         display: flex;
         flex-direction:row;
         justify-content:baseline;
@@ -1412,9 +1316,10 @@ text-align:end;
       display: flex;
       color:#fca7e2;
       padding-left: 20px;
-      font-size: 25px;
+      font-size: 20px;
       text-shadow:none;
-    
+      flex-direction: column;
+      align-items: center;
   }
   
   
