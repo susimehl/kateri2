@@ -89,6 +89,7 @@ body {
     z-index: 2;
     flex-direction: column;
     justify-content: space-between;
+  
   }
   
   .nav-container .hamburger-lines .line {
@@ -96,8 +97,9 @@ body {
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background:rgb(245, 2, 2);
+    background:rgba(255, 0, 0, 0.429);
     text-shadow:6px 3px 15px; 
+   
   }
   
   .nav-container .hamburger-lines .line1 {
@@ -444,7 +446,7 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background:rgba(241, 233, 233, 0.429);
+  background:rgba(250, 2, 2, 0.429);
   text-shadow:6px 3px 15px; 
 }
 
@@ -1093,7 +1095,7 @@ text-align:end;
   width: 100%;
   border-radius: 10px;
   /*background: #6eb1ba;*/
-  background:rgba(255, 0, 0, 0.429);
+  background:rgb(254, 220, 253);
   text-shadow:6px 3px 15px; /*neon..glow*/
   
 }
@@ -1126,7 +1128,8 @@ text-align:end;
   top: 15px;
   right: 15px;
   font-size: 1.5rem;
-  color:rgba(255, 0, 0, 0.354);
+  color:rgb(254, 220, 253);
+  text-shadow:6px 3px 15px;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -1263,8 +1266,24 @@ text-align:end;
       font-size: 15px;
       font-weight: 100;
      }
+     #section2 .accordion-item-header{
+      font-size: 20px;
+      font-weight: bold;
+     }
+    #section3 .accordion-item-header{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    #section4 .accordion-item-header{
+      font-size: 20px;
+      font-weight: bold;
+    }
   
   /*CONTACT*/
+  #section5 .accordion-item-header{
+    font-size: 20px;
+      font-weight: bold;
+  }
   
   /*SOCIAL MEDIA BUTTONS*/
   
@@ -1341,6 +1360,11 @@ text-align:end;
     width: 80px;
     padding-bottom: 22px;
     
+   }
+   h1{
+    font-size: 20px;
+      font-weight: bold;
+      padding-left: 20px;
    }
 
 
