@@ -96,7 +96,7 @@ body {
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background:rgba(255, 0, 0, 0.429);
+    background:rgb(245, 2, 2);
     text-shadow:6px 3px 15px; 
   }
   
@@ -444,7 +444,7 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background:rgba(255, 0, 0, 0.429);
+  background:rgba(241, 233, 233, 0.429);
   text-shadow:6px 3px 15px; 
 }
 
@@ -1084,6 +1084,7 @@ text-align:end;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 .nav-container .hamburger-lines .line {
@@ -1094,6 +1095,7 @@ text-align:end;
   /*background: #6eb1ba;*/
   background:rgba(255, 0, 0, 0.429);
   text-shadow:6px 3px 15px; /*neon..glow*/
+  
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -1296,6 +1298,7 @@ text-align:end;
       display: flex;
       justify-content:center;
       padding-top: 10px;
+
       padding-left: 15px;
    
   
